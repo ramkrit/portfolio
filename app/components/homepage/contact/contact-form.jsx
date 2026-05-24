@@ -34,10 +34,11 @@ function ContactForm() {
 
     try {
       setIsLoading(true);
-      const res = await axios.post(
-        `${process.env.NEXT_PUBLIC_APP_URL}/api/contact`,
-        userInput
-      );
+      // Use NEXT_PUBLIC_APP_URL when provided (handy for previews / custom domains),
+      // otherwise fall back to a same-origin relative URL so this just works in
+      // dev and prod without any extra config.
+      const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "";
+      const res = await axios.post(`${baseUrl}/api/contact`, userInput);
 
       toast.success(res?.data?.message || "Message sent successfully!");
       setUserInput({
