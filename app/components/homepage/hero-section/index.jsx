@@ -131,6 +131,10 @@ function HeroSection() {
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">TypeScript</span>
                 <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">React.js</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Next.js</span>
+                <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Kafka</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Redis</span>
