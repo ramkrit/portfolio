@@ -91,6 +91,11 @@ import redis from '../app/assets/svg/skills/redis.svg'
 import bitbucket from '../app/assets/svg/skills/bitbucket.svg'
 import jira from '../app/assets/svg/skills/jira.svg'
 
+import langchain from '../app/assets/svg/skills/langchain.svg'
+import openai from '../app/assets/svg/skills/openai.svg'
+import rag from '../app/assets/svg/skills/rag.svg'
+import vectorSearch from '../app/assets/svg/skills/vector-search.svg'
+
 
 
 export const skillsImage = (skill) => {
@@ -276,6 +281,14 @@ export const skillsImage = (skill) => {
       return bitbucket;
     case 'jira':
       return jira;
+    case 'langchain':
+      return langchain;
+    case 'openai':
+      return openai;
+    case 'rag':
+      return rag;
+    case 'vector search':
+      return vectorSearch;
     default:
       break;
   }
